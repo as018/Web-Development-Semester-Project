@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Instructor</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <header>Add Instructor</header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="studentEnroll.html">Student Enrollment</a></li>
+            <li><a href="addInstructor.html">Add Instructor</a></li>
+            <li><a href="addCourse.html">Add Course</a></li>
+            <li><a href="registerCourse.html">Register Course</a></li>
+            <li><a href="dropCourse.html">Drop Course</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="rank">Rank:</label>
+            <select id="rank" name="rank" required>
+                <option value="instructor">Instructor</option>
+                <option value="assistantProfessor">Assistant Professor</option>
+                <option value="associateProfessor">Associate Professor</option>
+                <option value="professor">Professor</option>
+            </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button>Submit</button>
+    </form>
+        
+
+    <footer>
+        Web Development Project by Ian Yarwood, Corey V., and Adi
+    </footer>
+</body>
+</html>
