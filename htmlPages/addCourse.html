@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Course</title>
     <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <header>Add Course</header>
@@ -18,78 +19,47 @@
             <li><a href="dropCourse.html">Drop Course</a></li>
         </ul>
     </nav>
-    <form>
-        <label for="semester">Semester:</label>
-            <select id="semester" name="semester" required>
-                    <option value="spring">Spring</option>
-                    <option value="summer">Summer</option>
-                    <option value="fall">Fall</option>
-            </select>
-
-        <label for="mwfTime">Monday, Wednesday, Friday:</label>
-            <select id="mwfTime" name="mwfTime">
-                    <option value="mwf8">8:00am-8:50am</option>
-                    <option value="mwf9">9:00am-9:50am</option>
-                    <option value="mwf10">10:00am-10:50am</option>
-                    <option value="mwf11">11:00am-11:50am</option>
-                    <option value="mwf12">12:00am-12:50am</option>
-                    <option value="mwf1">1:00am-1:50am</option>
-                    <option value="mwf2">2:00am-2:50am</option>
-                    <option value="mwf3">3:00am-3:50am</option>
-            </select>
-
-        <label for="mwTime">Monday, Wednesday:</label>
-            <select id="mwTime" name="mwTime">
-                    <option value="mw9">9:00am-10:50am</option>
-                    <option value="mw1">1:00pm-2:15pm</option>
-                    <option value="mw12">1:00pm-2:50pm</option>
-                    <option value="mw2">2:00pm-3:15pm</option>      
-            </select>
-        
-        <label for="tthTime">Tuesday, Thursday:</label>
-            <select id="tthTime" name="tthTime">
-                <option value="tth8">8:00 AM to 9:15 AM</option>
-                <option value="tth9">9:30 AM to 10:45 AM</option>
-                <option value="tth11">11:00 AM to 12:15 PM</option>
-                <option value="tth1">1:00 PM to 2:15 PM</option>
-                <option value="tth2">2:30 PM to 3:45 PM</option>
-            </select>
-
-        <label for="singleDayTime">Any Single Day:</label>
-            <select id="singleDayTime" name="singleDayTime">
-                <option value="single1">1:00 PM to 4:00 PM</option>
-                <option value="single2">2:00 PM to 5:00 PM</option>
-                <option value="single3">7:00 PM to 9:30 PM</option>
-            </select>
-        
-        <label for="coursePrefix">Course Prefix:</label>
-        <input type="text" id="coursePrefix" name="cousePrefix" required>
-
-        <label for="courseNumber">Course Number:</label>
-        <input type="text" id="courseNumber" name="courseNumber" required>
-
-        <label for="courseSection">Course Section:</label>
-        <input type="courseSection" id="courseSection" name="courseSection" required>
-
-        <label for="courseName">Course Name:</label>
-        <input type="courseName" id="courseName" name="courseName" required>
-
-        <label for="room">Room:</label>
-        <input type="room" id="room" name="room" required>
-
-        <label for="days">Days Offered:</label>
-            <select id="days" name="days" required>
-                    <option value="mwf">Monday, Wednesday, Friday</option>
-                    <option value="mw">Monday, Wednesday</option>
-                    <option value="tth">Tuesday, Thursday</option>
-                    <option value="m">Monday</option>
-                    <option value="t">Tuesday</option>
-                    <option value="th">Thursday</option>
-            </select>
-        
-
-        <button>Submit</button>
-    </form> 
+    <main>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester" required>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coursePrefix">Course Prefix:</label>
+                    <input type="text" id="coursePrefix" name="coursePrefix" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="courseNumber">Course Number:</label>
+                    <input type="text" id="courseNumber" name="courseNumber" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="courseSection">Course Section:</label>
+                    <input type="text" id="courseSection" name="courseSection" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="courseName">Course Name:</label>
+                    <input type="text" id="courseName" name="courseName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="room">Room:</label>
+                    <input type="text" id="room" name="room" required>
+                </div>
+                
+                <button>Submit</button>
+            </form>  
+        </div>
+    </main>  
     <footer>
         Web Development Project by Ian Yarwood, Corey V., and Adi
     </footer>

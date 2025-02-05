@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop Course</title>
     <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <header>Drop Course</header>
@@ -18,34 +19,52 @@
             <li><a href="dropCourse.html">Drop Course</a></li>
         </ul>
     </nav>
-    <form>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-
-        <label for="semester">Semester:</label>
-            <select id="semester" name="semester" required>
-                    <option value="spring">Spring</option>
-                    <option value="summer">Summer</option>
-                    <option value="fall">Fall</option>
-            </select>
-
-        <label for="Year">Year:</label>
-        <input type="year" id="year" name="year" required>
-
-        <label for="coursePrefix">Course Prefix:</label>
-        <input type="text" id="coursePrefix" name="cousePrefix" required>
-
-        <label for="courseNumber">Course Number:</label>
-        <input type="text" id="courseNumber" name="courseNumber" required>
-
-        <label for="courseSection">Course Section:</label>
-        <input type="courseSection" id="courseSection" name="courseSection" required>
-
-        <button>Submit</button>
-    </form> 
+    <main>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester" required>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coursePrefix">Course Prefix:</label>
+                    <input type="text" id="coursePrefix" name="coursePrefix" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="courseNumber">Course Number:</label>
+                    <input type="text" id="courseNumber" name="courseNumber" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="courseSection">Course Section:</label>
+                    <input type="text" id="courseSection" name="courseSection" required>
+                </div>
+                
+                <button>Submit</button>
+            </form>  
+        </div>
+    </main>  
     <footer>
         Web Development Project by Ian Yarwood, Corey V., and Adi
     </footer>

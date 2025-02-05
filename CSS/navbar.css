@@ -1,5 +1,10 @@
 nav ul{
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: black;
 }
